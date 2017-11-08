@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>WebHW3-Temperature</title>
+		<style>
+			p { margin:0; }
+		</style>
+		<script type = "text/javascript">
+			var celsius;
+			var fahrenheit;
+			var turnCelsius;
+			var turnFahrenheit;
+			
+			celsius = window.prompt("輸入攝氏溫度：");
+			turnCelsius = parseFloat(celsius);
+			turnFahrenheit = parseFloat(fahrenheit);
+			
+			function temperature(c,f)
+			{
+				return  f=9/5*c+32;
+			}
+			
+			document.writeln("<p>攝氏溫度為：" +celsius+ "°C華氏溫度為："+temperature(turnCelsius,turnFahrenheit)+"°F</p>");
+		</script>
+	</head>
+	<body></body>
+</html>
